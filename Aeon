@@ -1,0 +1,20 @@
+  /// Squares a value.
+    let square x = x * x
+
+    /// Adds 1 to a value.
+    let addOne x = x + 1
+
+    /// Tests if an integer value is odd via modulo.
+    ///
+    /// '<>' is a binary comparison operator that means "not equal to".
+    let isOdd x = x % 2 <> 0
+
+    /// A list of 5 numbers.  More on lists later.
+    let numbers = [ 1; 2; 3; 4; 7 ]
+
+    /// Given a list of integers, it filters out the even numbers,
+    /// squares the resulting odds, and adds 1 to the squared odds.
+    let squareOddValuesAndAddOneComposition =
+        List.filter isOdd >> List.map (square >> addOne)
+
+    printfn $"processing {numbers} through 'squareOddValuesAndAddOneComposition' produces: {squareOddValuesAndAddOneComposition numbers}"
