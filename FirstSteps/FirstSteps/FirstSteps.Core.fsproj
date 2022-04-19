@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>True</UseWindowsForms>
+    <UseWPF>True</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Programs.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elmish.WPF" Version="4.0.0-beta-44" />
+  </ItemGroup>
+
+</Project>

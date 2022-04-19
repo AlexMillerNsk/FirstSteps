@@ -1,0 +1,3 @@
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps\obj\Debug\net6.0-windows\FirstSteps.fsproj.AssemblyReference.cache
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps\obj\Debug\net6.0-windows\FirstSteps.AssemblyInfoInputs.cache
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps\obj\Debug\net6.0-windows\FirstSteps.AssemblyInfo.fs
