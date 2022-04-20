@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FirstSteps.Core", "FirstSteps\FirstSteps.Core.fsproj", "{A2945117-A7CC-4B52-9C83-0014DC1E6E3D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ADFB7C72-0F49-43A2-96FF-BCB285D2DC34} = {ADFB7C72-0F49-43A2-96FF-BCB285D2DC34}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstSteps.UI", "FirstSteps.UI\FirstSteps.UI.csproj", "{ADFB7C72-0F49-43A2-96FF-BCB285D2DC34}"
 EndProject

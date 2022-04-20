@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+using FirstSteps.Core;
 
-namespace FirstSteps.UI
+namespace FirstSteps.UI;
+
+public partial class App
 {
-    /// <summary>
-    /// Логика взаимодействия для App.xaml
-    /// </summary>
-    public partial class App : Application
+    public App() => Activated += StartElmish;
+
+    private void StartElmish(object? sender, EventArgs e)
     {
+        Activated -= StartElmish;
+        Program.Run(MainWindow);
     }
 }
