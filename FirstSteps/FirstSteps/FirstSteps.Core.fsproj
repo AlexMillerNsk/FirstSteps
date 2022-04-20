@@ -6,7 +6,7 @@
     <UseWindowsForms>True</UseWindowsForms>
     <UseWPF>True</UseWPF>
   </PropertyGroup>
-
+	
   <ItemGroup>
     <Compile Include="Types.fs" />
     <Compile Include="Programs.fs" />
