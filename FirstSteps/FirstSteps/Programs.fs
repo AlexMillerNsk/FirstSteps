@@ -4,6 +4,12 @@ open System
 open Elmish
 open Elmish.WPF
 open Types
+
+//Messages
+type Msg =
+    | Rendered
+    | SetInput of string
+    | SetValue of int * int * float
 //Models
 type Model =
     { State: string
@@ -16,11 +22,7 @@ let init () =
       Input = String.Empty
       Items = []
       Total = 0.0 }, []
-//Messages
-type Msg =
-    | Rendered
-    | SetInput of string
-    | SetValue of int * int * float
+
 //Constructor
 [<RequireQualifiedAccess>]
 module ItemConstructor =
@@ -82,7 +84,7 @@ let bindings(): Binding<Model, Msg> list =
             "Sum"    |> Binding.oneWay (fun (_, e) -> e.Sum) ] ))
     ]
 
-
+//App
 let Run window =
     Program.mkProgramWpf
         init

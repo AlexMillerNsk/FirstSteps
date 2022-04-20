@@ -239,7 +239,8 @@
         "dependencies": {
           "Elmish.WPF": {
             "target": "Package",
-            "version": "[4.0.0-beta-44, )"
+            "version": "[4.0.0-beta-44, )",
+            "generatePathProperty": true
           },
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
@@ -266,7 +267,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

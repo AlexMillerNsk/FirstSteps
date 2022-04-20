@@ -1,0 +1,16 @@
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\bin\Debug\FirstSteps.UI.exe.config
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\bin\Debug\FirstSteps.UI.exe
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\bin\Debug\FirstSteps.UI.pdb
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI.csproj.AssemblyReference.cache
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI.csproj.SuggestedBindingRedirects.cache
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\MainWindow.g.cs
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\App.g.cs
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI_MarkupCompile.cache
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI_MarkupCompile.lref
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\MainWindow.baml
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI.g.resources
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI.Properties.Resources.resources
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI.csproj.GenerateResource.cache
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI.csproj.CoreCompileInputs.cache
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI.exe
+C:\Users\MelnikovAP\source\repos\FirstSteps\FirstSteps\FirstSteps.UI\obj\Debug\FirstSteps.UI.pdb
