@@ -6,64 +6,17 @@
         xmlns:local="clr-namespace:FirstSteps.UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Border Margin="5">
-        <Grid Margin="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <TextBlock Text="{Binding State}" />
-            <TextBlock Grid.Row="1" Text="{Binding Input, Mode=TwoWay}" />
-            <TextBlock Grid.Row="2" Text="{Binding Total, StringFormat='Total: {0}'}" />
-            <Grid Grid.Row="3">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <ListBox
-                    Margin="5"
-                    Grid.Column="0"
-                    ItemsSource="{Binding Items}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Margin="5">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="X: " />
-                                    <TextBox
-                                        Text="{Binding Value1, Mode=TwoWay}" />
-                                    <TextBlock Text=" Y: " />
-                                    <TextBox
-                                        Text="{Binding Value2, Mode=TwoWay}" />
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="Sum: " />
-                                    <TextBlock Text="{Binding Sum}" />
-                                </StackPanel>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-                <ListBox
-                    Margin="5"
-                    Grid.Column="1"
-                    ItemsSource="{Binding Items}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="X: " />
-                                <TextBox
-                                    Text="{Binding Value1, Converter={StaticResource StringToDoubleValueConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-                                <TextBlock Text=" Y: " />
-                                <TextBox
-                                    Text="{Binding Value2, Converter={StaticResource StringToDoubleValueConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-            </Grid>
-        </Grid>
-    </Border>
-    
+    <StackPanel>
+
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Button Command="{Binding SetPlus}" Content="ButtOn" Height="30" Width="50"></Button>
+            <Button Command="{Binding SetMinus}" Content="ButtOff" Height="30" Width="50"></Button>
+
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+ 
+            <TextBox Text = "{Binding SetState}" ></TextBox>
+           
+        </StackPanel>
+    </StackPanel>
 </Window>

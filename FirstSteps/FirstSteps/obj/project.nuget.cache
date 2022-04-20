@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "y37hnijOQYXJxE2MqymYU9eBinJRtiOAUcdgKup6rt5gn9PZJcAMVDZg+MDvCGQqv5ql5ksaYRxZFItfRRGY6w==",
+  "dgSpecHash": "pCGaH+ASPXDd4J/OVU+7MWGmT+S3ABSv+MBmZdOnHSA7J+EhwDNOdsjOnHsEhCOKLDe/Znp5x5MDkLNA6+ysPA==",
   "success": true,
   "projectFilePath": "C:\\Users\\MelnikovAP\\source\\repos\\FirstSteps\\FirstSteps\\FirstSteps\\FirstSteps.Core.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MelnikovAP\\.nuget\\packages\\elmish\\3.1.0\\elmish.3.1.0.nupkg.sha512",
-    "C:\\Users\\MelnikovAP\\.nuget\\packages\\elmish.wpf\\4.0.0-beta-44\\elmish.wpf.4.0.0-beta-44.nupkg.sha512",
-    "C:\\Users\\MelnikovAP\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512",
-    "C:\\Users\\MelnikovAP\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.6\\microsoft.extensions.logging.abstractions.3.1.6.nupkg.sha512"
+    "C:\\Users\\MelnikovAP\\.nuget\\packages\\elmish\\3.0.3\\elmish.3.0.3.nupkg.sha512",
+    "C:\\Users\\MelnikovAP\\.nuget\\packages\\elmish.wpf\\3.5.8\\elmish.wpf.3.5.8.nupkg.sha512",
+    "C:\\Users\\MelnikovAP\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
   ],
   "logs": []
 }

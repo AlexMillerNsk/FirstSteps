@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Elmish.WPF" Version="4.0.0-beta-44" />
+    <PackageReference Include="Elmish.WPF" Version="3.5.8" />
   </ItemGroup>
 
 </Project>

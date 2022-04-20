@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "Elmish/3.1.0": {
+      "Elmish/3.0.3": {
         "type": "package",
         "dependencies": {
           "FSharp.Core": "4.6.2"
@@ -14,12 +14,11 @@
           "lib/netstandard2.0/Elmish.dll": {}
         }
       },
-      "Elmish.WPF/4.0.0-beta-44": {
+      "Elmish.WPF/3.5.8": {
         "type": "package",
         "dependencies": {
-          "Elmish": "[3.1.0, 3.99.0]",
-          "FSharp.Core": "[4.6.2, 99.0.0]",
-          "Microsoft.Extensions.Logging.Abstractions": "[3.1.6, 99.0.0]"
+          "Elmish": "[3.0.3, 3.99.0]",
+          "FSharp.Core": "4.6.2"
         },
         "compile": {
           "lib/net5.0-windows7.0/Elmish.WPF.dll": {}
@@ -87,27 +86,18 @@
             "copyToOutput": false
           }
         }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/3.1.6": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "Elmish/3.1.0": {
-      "sha512": "AwXmBx+dIMWsUOpFjjqZ4HZ71nGE0gMpy0iEox2ZZKis/pqLrhU49qnyB+05OEWjonwS0zfAAAPchV84y6qp5w==",
+    "Elmish/3.0.3": {
+      "sha512": "8wlNrIPyiC/oktXaxxxSKtpeUz8i/LWvVETyTQ6HuK4uMy8V+MqCSINYjK1WVWnN4lPSQFI+IesupmntWmH6eQ==",
       "type": "package",
-      "path": "elmish/3.1.0",
+      "path": "elmish/3.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "elmish.3.1.0.nupkg.sha512",
+        "elmish.3.0.3.nupkg.sha512",
         "elmish.nuspec",
         "lib/net461/Elmish.dll",
         "lib/net461/Elmish.pdb",
@@ -120,22 +110,22 @@
         "lib/netstandard2.0/Elmish.xml"
       ]
     },
-    "Elmish.WPF/4.0.0-beta-44": {
-      "sha512": "MljVwJq1+TjFPEOla89vAwHUB+JMKl4+W3Ha+XzSKUh4NmzKn1IgI0duPm+pfmfN6ffxwjnQa4CI3nSfozmXCg==",
+    "Elmish.WPF/3.5.8": {
+      "sha512": "8PUQiS4CfnAsg2t1D9Ip/OXcusrqC5A/wkrQKg0p6wVVkWpSBiDhCtsTVrAmNhKLIaNmcTMYdl0WgApROBuOzw==",
       "type": "package",
-      "path": "elmish.wpf/4.0.0-beta-44",
+      "path": "elmish.wpf/3.5.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "elmish-wpf-logo-128x128.png",
-        "elmish.wpf.4.0.0-beta-44.nupkg.sha512",
+        "elmish.wpf.3.5.8.nupkg.sha512",
         "elmish.wpf.nuspec",
         "lib/net461/Elmish.WPF.dll",
         "lib/net461/Elmish.WPF.xml",
         "lib/net5.0-windows7.0/Elmish.WPF.dll",
         "lib/net5.0-windows7.0/Elmish.WPF.xml",
-        "lib/netcoreapp3.1/Elmish.WPF.dll",
-        "lib/netcoreapp3.1/Elmish.WPF.xml"
+        "lib/netcoreapp3.0/Elmish.WPF.dll",
+        "lib/netcoreapp3.0/Elmish.WPF.xml"
       ]
     },
     "FSharp.Core/6.0.2": {
@@ -181,25 +171,11 @@
         "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
       ]
-    },
-    "Microsoft.Extensions.Logging.Abstractions/3.1.6": {
-      "sha512": "o2XYIjF9UugupEPvFsc9N8SjevixoRznS0V6EtjUZcGV4EjXXWKUXlKKsIWmD3i4dSiGo82aNcyqfQTsF/8h8g==",
-      "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/3.1.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.3.1.6.nupkg.sha512",
-        "microsoft.extensions.logging.abstractions.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Elmish.WPF >= 4.0.0-beta-44",
+      "Elmish.WPF >= 3.5.8",
       "FSharp.Core >= 6.0.2"
     ]
   },
@@ -239,7 +215,7 @@
         "dependencies": {
           "Elmish.WPF": {
             "target": "Package",
-            "version": "[4.0.0-beta-44, )",
+            "version": "[3.5.8, )",
             "generatePathProperty": true
           },
           "FSharp.Core": {
