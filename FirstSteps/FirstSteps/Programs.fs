@@ -6,32 +6,40 @@ open Elmish.WPF
 
 //Messages
 type Msg =
-    | SetState
+    | SetState of string
     | SetMinus
     | SetPlus
+    | AddTodo
 //Models
 type Model =
-    { State: int
+    { State: string
       Input: string
+      ToDo: string list
     }
 //Init
 let init () =
-    { State = 0
-      Input = String.Empty },[]
-
+    { State = String.Empty
+      Input = String.Empty 
+      ToDo = List.Empty},[]
+//AddThings
+let AddThings m = 
+     { m with
+        ToDo =  m.State :: m.ToDo}
 //Update
 let update msg m =
     match msg with
-    | SetState                 -> { m with State = m.State },[]
-    | SetMinus                 -> { m with State = m.State - 1 },[]
-    | SetPlus                  -> { m with State = m.State + 1 },[]
+    | SetState v               -> { m with State = v },[]
+    | SetMinus                 -> AddThings m, []
+    | SetPlus                  -> { m with State = m.State },[]
+    | AddTodo                  -> AddThings m, []
 //Bindings
 let bindings(): Binding<Model, Msg> list =
     [
         "SetState "     |> Binding.oneWay(fun m -> m.State)
         "SetMinus "     |> Binding.cmd SetMinus
         "SetPlus "      |> Binding.cmd SetPlus
-       
+        "ToDo"          |> Binding.oneWay(fun m -> m.ToDo)
+        "AddToDo"       |> Binding.cmd AddTodo
     ]
 
 let Run window =

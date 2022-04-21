@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vnzS0eU1tpnX9gNFAScgLRxNlnZ77+mgbTfs2vJuteRBs4Uu1d2MXBgJYpstfJbc/AbK/qRnnZ6fRvc30RXCqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MelnikovAP\\source\\repos\\FirstSteps\\FirstSteps\\WpfApp1\\FirstSteps.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MelnikovAP\\.nuget\\packages\\elmish\\3.0.3\\elmish.3.0.3.nupkg.sha512",
+    "C:\\Users\\MelnikovAP\\.nuget\\packages\\elmish.wpf\\3.5.8\\elmish.wpf.3.5.8.nupkg.sha512",
+    "C:\\Users\\MelnikovAP\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

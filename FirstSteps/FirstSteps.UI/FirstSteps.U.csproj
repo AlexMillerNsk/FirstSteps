@@ -125,5 +125,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FirstSteps\FirstSteps.Core.fsproj">
+      <Project>{a2945117-a7cc-4b52-9c83-0014dc1e6e3d}</Project>
+      <Name>FirstSteps.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
