@@ -10,15 +10,21 @@ type Msg =
     | SetState of string
     | AddTodo
     | RemoveToDo of obj
+    | Plus
+    | Minus
+    | SetCount of int
 //Models
 type Model =
-    { State: string
+    { Count: int
+      State: string
       ToDo: Todo list
     }
+
 //Init
 let init () =
     { State = String.Empty
-      ToDo = []},[]
+      ToDo = []
+      Count = 0},[]
 //AddThings
 let AddThings m =
     { m with
@@ -29,16 +35,23 @@ let update msg m =
     match msg with
     | SetState v          -> { m with State = v },[]
     | AddTodo             -> AddThings m, []
-    | RemoveToDo b -> { m with ToDo= m.ToDo |> List.filter (fun z -> z.Id <> (b:?> int)) },[]
+    | RemoveToDo b        -> { m with ToDo= m.ToDo |> List.filter (fun z -> z.Id <> (b:?> int)) },[]
+    | SetCount k          -> { m with Count = k}, []
+    | Plus                -> { m with Count = m.Count+1},[]
+    | Minus               -> { m with Count = m.Count-1},[]
 //Bindings
 let bindings(): Binding<Model, Msg> list =
     [
-        "SetState "     |> Binding.twoWay ((fun m -> m.State), SetState)
+        "SetState"      |> Binding.twoWay ((fun m -> m.State), SetState)
         "ToDo"          |> Binding.subModelSeq ((fun m -> m.ToDo), (fun y -> y.Id), (fun () ->
         [ "RemoveTodo"  |> Binding.cmdParam RemoveToDo
           "Id"          |> Binding.oneWay (fun (_, s) -> s.Id)
           "Value"       |> Binding.oneWay (fun (_, s) -> s.Value) ]))
-        "AddToDo"       |> Binding.cmd AddTodo
+        "AddToDo"       |> Binding.cmdIf (AddTodo, (fun m -> not <| String.IsNullOrEmpty(m.State)))
+        "SetCount"      |> Binding.twoWay ((fun m -> m.Count), SetCount)
+        "Plus"          |> Binding.cmd Plus
+        "Minus"         |> Binding.cmd Minus
+    
     ]
 
 let Run window =

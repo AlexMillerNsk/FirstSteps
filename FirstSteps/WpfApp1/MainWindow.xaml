@@ -10,11 +10,13 @@
         <KeyBinding Key="Enter" Command="{Binding AddTodo}" />
     </Window.InputBindings>
     <StackPanel>
-
         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
             <Button Command="{Binding AddToDo}" Content="AddToDo" Height="30" Width="70"></Button>
+            <Button Command="{Binding Plus}" Content="Plus" Height="30" Width="70"></Button>
+            <Button Command="{Binding Minus}" Content="Minus" Height="30" Width="70"></Button>
         </StackPanel>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBox Text = "{Binding SetCount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="20" Width="80" ></TextBox>
             <TextBox Text = "{Binding SetState, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="20" Width="80" ></TextBox>
             <ListBox ItemsSource = "{Binding ToDo}" Width="200" >
                 <ListBox.ItemTemplate>
@@ -30,7 +32,6 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-           
         </StackPanel>
     </StackPanel>
 </Window>
