@@ -18,7 +18,7 @@
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBox Text = "{Binding SetCount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="20" Width="80" ></TextBox>
             <TextBox Text = "{Binding SetState, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="20" Width="80" ></TextBox>
-            <ListBox ItemsSource = "{Binding ToDo}" Width="200" >
+            <ListBox ItemsSource = "{Binding ToDo}" Width="200"  ScrollViewer.VerticalScrollBarVisibility="Visible">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -28,6 +28,11 @@
                                 Content="del"
                                 CommandParameter="{Binding Id}">
                             </Button>
+                            <TextBox Text="{Binding ToDoText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                <TextBox.InputBindings>
+                                    <KeyBinding Key="Return" Command="{Binding UpdateTodo}"/>
+                                </TextBox.InputBindings>
+                            </TextBox>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
